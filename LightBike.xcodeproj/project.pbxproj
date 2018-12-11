@@ -58,17 +58,41 @@
 		5E796AD921C038B5008BA338 /* LightBike */ = {
 			isa = PBXGroup;
 			children = (
-				5E796ADA21C038B5008BA338 /* AppDelegate.h */,
-				5E796ADB21C038B5008BA338 /* AppDelegate.m */,
-				5E796ADD21C038B5008BA338 /* ViewController.h */,
-				5E796ADE21C038B5008BA338 /* ViewController.m */,
-				5E796AE021C038B5008BA338 /* Main.storyboard */,
-				5E796AE321C038B7008BA338 /* Assets.xcassets */,
-				5E796AE521C038B7008BA338 /* LaunchScreen.storyboard */,
-				5E796AE821C038B7008BA338 /* Info.plist */,
-				5E796AE921C038B7008BA338 /* main.m */,
+				5E796AF021C03942008BA338 /* Com */,
+				5E796AF121C03966008BA338 /* App */,
+				5E796AF221C03983008BA338 /* USE */,
 			);
 			path = LightBike;
+			sourceTree = "<group>";
+		};
+		5E796AF021C03942008BA338 /* Com */ = {
+			isa = PBXGroup;
+			children = (
+				5E796ADA21C038B5008BA338 /* AppDelegate.h */,
+				5E796ADB21C038B5008BA338 /* AppDelegate.m */,
+				5E796AE921C038B7008BA338 /* main.m */,
+			);
+			path = Com;
+			sourceTree = "<group>";
+		};
+		5E796AF121C03966008BA338 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5E796AE021C038B5008BA338 /* Main.storyboard */,
+				5E796ADD21C038B5008BA338 /* ViewController.h */,
+				5E796ADE21C038B5008BA338 /* ViewController.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5E796AF221C03983008BA338 /* USE */ = {
+			isa = PBXGroup;
+			children = (
+				5E796AE521C038B7008BA338 /* LaunchScreen.storyboard */,
+				5E796AE321C038B7008BA338 /* Assets.xcassets */,
+				5E796AE821C038B7008BA338 /* Info.plist */,
+			);
+			path = USE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
