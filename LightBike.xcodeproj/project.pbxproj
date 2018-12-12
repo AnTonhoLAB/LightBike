@@ -13,6 +13,7 @@
 		5E796AE421C038B7008BA338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E796AE321C038B7008BA338 /* Assets.xcassets */; };
 		5E796AE721C038B7008BA338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E796AE521C038B7008BA338 /* LaunchScreen.storyboard */; };
 		5E796AEA21C038B7008BA338 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E796AE921C038B7008BA338 /* main.m */; };
+		5E796AF621C03F39008BA338 /* LightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E796AF521C03F39008BA338 /* LightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5E796AE621C038B7008BA338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E796AE821C038B7008BA338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E796AE921C038B7008BA338 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E796AF421C03F39008BA338 /* LightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightViewController.h; sourceTree = "<group>"; };
+		5E796AF521C03F39008BA338 /* LightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 		5E796AF121C03966008BA338 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				5E796AF321C03F03008BA338 /* Light */,
 				5E796AE021C038B5008BA338 /* Main.storyboard */,
 				5E796ADD21C038B5008BA338 /* MainViewController.h */,
 				5E796ADE21C038B5008BA338 /* MainViewController.m */,
@@ -93,6 +97,15 @@
 				5E796AE821C038B7008BA338 /* Info.plist */,
 			);
 			path = USE;
+			sourceTree = "<group>";
+		};
+		5E796AF321C03F03008BA338 /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				5E796AF421C03F39008BA338 /* LightViewController.h */,
+				5E796AF521C03F39008BA338 /* LightViewController.m */,
+			);
+			path = Light;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +181,7 @@
 				5E796ADF21C038B5008BA338 /* MainViewController.m in Sources */,
 				5E796AEA21C038B7008BA338 /* main.m in Sources */,
 				5E796ADC21C038B5008BA338 /* AppDelegate.m in Sources */,
+				5E796AF621C03F39008BA338 /* LightViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
