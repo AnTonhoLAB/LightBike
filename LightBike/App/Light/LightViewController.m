@@ -22,13 +22,24 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-   
-    [UIView transitionWithView:_lightView duration:0.5 options:UIViewAnimationOptionTransitionNone animations:^{
-        
-        [self->_lightView setBackgroundColor:[UIColor colorWithRed:0.8588 green:0.8588 blue:0.8588 alpha:1]];
+    [self pulse];
+}
+
+- (IBAction)backToMenu:(id)sender {
+    NSLog(@"PORRA");
+    [self dismissViewControllerAnimated: YES completion: nil];
+}
+
+- (void) pulse {
+    [UIView transitionWithView:self.lightView duration:0.5 options:UIViewAnimationOptionRepeat animations:^{
+        [self.lightView setBackgroundColor:[UIColor redColor]];
     }completion:^(BOOL finished) {
-        
+        [self.lightView setBackgroundColor:[UIColor blackColor]];
     }];
+}
+
+-(BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 @end

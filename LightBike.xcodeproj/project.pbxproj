@@ -10,10 +10,10 @@
 		5E796ADC21C038B5008BA338 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E796ADB21C038B5008BA338 /* AppDelegate.m */; };
 		5E796ADF21C038B5008BA338 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E796ADE21C038B5008BA338 /* MainViewController.m */; };
 		5E796AE221C038B5008BA338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E796AE021C038B5008BA338 /* Main.storyboard */; };
-		5E796AE421C038B7008BA338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E796AE321C038B7008BA338 /* Assets.xcassets */; };
 		5E796AE721C038B7008BA338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E796AE521C038B7008BA338 /* LaunchScreen.storyboard */; };
 		5E796AEA21C038B7008BA338 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E796AE921C038B7008BA338 /* main.m */; };
 		5E796AF621C03F39008BA338 /* LightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E796AF521C03F39008BA338 /* LightViewController.m */; };
+		5E796AF821C18666008BA338 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E796AF721C18666008BA338 /* Assests.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +23,12 @@
 		5E796ADD21C038B5008BA338 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5E796ADE21C038B5008BA338 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5E796AE121C038B5008BA338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5E796AE321C038B7008BA338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E796AE621C038B7008BA338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E796AE821C038B7008BA338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E796AE921C038B7008BA338 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E796AF421C03F39008BA338 /* LightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightViewController.h; sourceTree = "<group>"; };
 		5E796AF521C03F39008BA338 /* LightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightViewController.m; sourceTree = "<group>"; };
+		5E796AF721C18666008BA338 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				5E796AE521C038B7008BA338 /* LaunchScreen.storyboard */,
-				5E796AE321C038B7008BA338 /* Assets.xcassets */,
 				5E796AE821C038B7008BA338 /* Info.plist */,
+				5E796AF721C18666008BA338 /* Assests.xcassets */,
 			);
 			path = USE;
 			sourceTree = "<group>";
@@ -166,8 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E796AE721C038B7008BA338 /* LaunchScreen.storyboard in Resources */,
-				5E796AE421C038B7008BA338 /* Assets.xcassets in Resources */,
 				5E796AE221C038B5008BA338 /* Main.storyboard in Resources */,
+				5E796AF821C18666008BA338 /* Assests.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				INFOPLIST_FILE = "$(SRCROOT)/LightBike/USE/Info.plist";
@@ -330,8 +331,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crowcode.LightBike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crowcode.BikeLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -340,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				INFOPLIST_FILE = "$(SRCROOT)/LightBike/USE/Info.plist";
@@ -347,8 +350,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crowcode.LightBike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crowcode.BikeLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
